@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 550px;
+    height: 600px;
+    background-color: rgb(254, 239, 231);
+    border-radius: 15px;
+    padding: 45px 55px;
+    display: grid;
+    grid-template-rows: 66px 510px;
+    gap: 22px;
+}
+
+.app__controls {
+    display: grid;
+    grid-template-columns: auto 160px;
+}
+
+.app__controls-input {
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.app__controls-input:focus-visible {
+    outline: none;
+}
+
+.app__list {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.app__list-item {
+    background-color: #ffcebd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+}
+
+.app__controls-button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #ffb855;
+    font-size: 18px;
+}
+
+.app__list-btn {
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.app__list-btn:hover {
+    background: #f14c0a;
+    border: none;
+    border-radius: 5px;
+}
+
+.app__list-checkbox {
+    width: 20px;
+    height: 20px; 
+}
+
+.app__list-item-text {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.app__list-item_done {
+    background-color: #defaea;
+    text-decoration: line-through;
+}
+
+button:hover {
+    cursor: pointer;
+}
